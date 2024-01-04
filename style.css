@@ -69,25 +69,25 @@ body{
     padding: 20px;
 
 }
-.cells {
+.cell {
     border: #C4D5B6 solid 3px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.one, .two, .three {
-    border-top-color: #212C19;
-}
-.one, .four, .seven {
+
+.cell:nth-child(1), .cell:nth-child(4), .cell:nth-child(7) {
     border-left-color: #212C19;
 }
-.seven, .eight, .nine {
+.cell:nth-child(1), .cell:nth-child(2), .cell:nth-child(3) {
+    border-top-color: #212C19;
+}
+.cell:nth-child(7), .cell:nth-child(8), .cell:nth-child(9) {
     border-bottom-color: #212C19;
 }
-.three, .six, .nine {
+.cell:nth-child(3n) {
     border-right-color: #212C19;
 }
-
 .content {
     display: flex;
     align-items: center;
